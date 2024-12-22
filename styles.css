@@ -39,12 +39,9 @@ header > ul > li > a {
 #kommand > ul > li > p {
   color: rgba(117, 117, 117, 1);
 }
-nav > ul > li > a[href^="./index.html"] {
-  color: rgba(33, 150, 243, 1);
-}
 #mon > li > a[href^="mailto:"] {
   color: rgba(117, 117, 117, 1);
 }
-#sere > a[href^="mailto:"] {
+header > ul > li > a:hover, header > nav > ul > li > a:hover {
   color: rgba(33, 150, 243, 1);
 }

@@ -10,26 +10,17 @@ footer {
 .kontex {
   color: rgba(255, 255, 255, 1);
 }
-address > ul > li > a[href^="tel:"] {
+address > ul > li > a[href^="tel:"], address > ul > li > a[href^="mailto:"] {
   color: rgba(255, 255, 255, 0.6);
 }
 .nus > p {
   color: rgba(255, 255, 255, 1);
 }
-address > ul > li > a[href^="mailto:"] {
-  color: rgba(33, 150, 243, 1);
-}
-nav > ul > li > a[href^="./portfolio.html"] {
-  color: rgba(33, 150, 243, 1);
-}
 header > nav > ul > li > a {
   color: rgba(33, 33, 33, 1);
 }
-#ser > a {
+header > ul > li > a {
   color: rgba(117, 117, 117, 1);
-}
-#sun > a[href^="mailto:"] {
-  color: rgba(33, 150, 243, 1);
 }
 #p {
     color: rgba(33, 150, 243, 1);
@@ -39,4 +30,11 @@ header > nav > ul > li > a {
 }
 h2 {
     display: none;
+}
+header > ul > li > a:hover, header > nav > ul > li > a:hover {
+  color: rgba(33, 150, 243, 1);
+}
+.spisok > button:hover {
+  background-color: rgba(33, 150, 243, 1);
+  color: rgba(255, 255, 255, 1);
 }
