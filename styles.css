@@ -1,0 +1,50 @@
+#kulka {
+  background-color: rgba(47, 48, 58, 1);
+}
+#kulka > h1 {
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+#kulka > button {
+  background-color: rgba(33, 150, 243, 1);
+  color: rgba(255, 255, 255, 1);
+}
+footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+.nus > p {
+  color: rgba(255, 255, 255, 1);
+}
+address > ul > li > a[href^="mailto:"], address > ul > li > a[href^="tel:"] {
+  color: rgba(255, 255, 255, 0.6);
+}
+.nachtex {
+  color: rgba(33, 150, 243, 1);
+}
+.kontex {
+  color: rgba(255, 255, 255, 1);
+}
+header > nav > ul > li > a {
+  color: rgba(33, 33, 33, 1);
+}
+header > ul > li > a {
+  color: rgba(117, 117, 117, 1);
+}
+#osob > h2 > ul > li > p {
+  color: rgba(117, 117, 117, 1);
+}
+.kontexq {
+  color: rgba(0, 0, 0, 1);
+}
+#kommand > ul > li > p {
+  color: rgba(117, 117, 117, 1);
+}
+nav > ul > li > a[href^="./index.html"] {
+  color: rgba(33, 150, 243, 1);
+}
+#mon > li > a[href^="mailto:"] {
+  color: rgba(117, 117, 117, 1);
+}
+#sere > a[href^="mailto:"] {
+  color: rgba(33, 150, 243, 1);
+}

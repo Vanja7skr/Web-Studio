@@ -1,0 +1,39 @@
+ul > li > p {
+    color: rgba(117, 117, 117, 1);
+}
+footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+.nachtex {
+  color: rgba(33, 150, 243, 1);
+}
+.kontex {
+  color: rgba(255, 255, 255, 1);
+}
+address > ul > li > a[href^="tel:"] {
+  color: rgba(255, 255, 255, 0.6);
+}
+.nus > p {
+  color: rgba(255, 255, 255, 1);
+}
+address > ul > li > a[href^="mailto:"] {
+  color: rgba(33, 150, 243, 1);
+}
+nav > ul > li > a[href^="./portfolio.html"] {
+  color: rgba(33, 150, 243, 1);
+}
+header > nav > ul > li > a {
+  color: rgba(33, 33, 33, 1);
+}
+#ser > a {
+  color: rgba(117, 117, 117, 1);
+}
+#sun > a[href^="mailto:"] {
+  color: rgba(33, 150, 243, 1);
+}
+#p {
+    color: rgba(33, 150, 243, 1);
+}
+#o {
+    color: rgba(0, 0, 0, 1);
+}
