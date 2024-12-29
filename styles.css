@@ -54,3 +54,6 @@ header > ul > li > a {
 header > ul > li > a:hover, header > nav > ul > li > a:hover {
   color: var(--blue-color);
 }
+address {
+  font-style: normal;
+}
