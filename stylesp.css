@@ -7,6 +7,15 @@
 --blue-color: rgba(33, 150, 243, 1);
 --white-color: rgba(255, 255, 255, 1);
 --light-grey-color: rgba(255, 255, 255, 0.6);
+--font-family: "Roboto", sans-serif;
+--second-family: "Raleway", sans-serif;
+}
+header, main, footer {
+  font-family: var(--font-family);
+  letter-spacing: 0.03em;
+}
+header > a {
+  font-family: var(--second-family);
 }
 ul > li > p {
     color: var(--grey-color);
@@ -22,6 +31,7 @@ footer {
 }
 address > ul > li > a[href^="tel:"], address > ul > li > a[href^="mailto:"] {
   color: var(--light-grey-color);
+  font-family: roboto;
 }
 .nus > p {
   color: var(--white-color);
@@ -50,4 +60,13 @@ header > ul > li > a:hover, header > nav > ul > li > a:hover {
 }
 address {
   font-style: normal;
+}
+header > a {
+  font-family: var(--second-family);
+}
+footer > a {
+  font-family: var(--second-family);
+}
+#sps > li {
+  font-family: var(--font-family);
 }

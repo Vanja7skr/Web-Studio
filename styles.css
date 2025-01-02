@@ -6,6 +6,15 @@
 --blue-color: rgba(33, 150, 243, 1);
 --white-color: rgba(255, 255, 255, 1);
 --light-grey-color: rgba(255, 255, 255, 0.6);
+--font-family: "Roboto", sans-serif;
+--second-family: "Raleway", sans-serif;
+}
+header, main, footer {
+  font-family: var(--font-family);
+  letter-spacing: 0.03em;
+}
+header > a {
+  font-family: var(--second-family);
 }
 #kulka {
   background-color: var(--black-grey-color);
@@ -17,6 +26,7 @@
 #kulka > button {
   background-color: var(--blue-color);
   color: var(--white-color);
+  font-family: var(--font-family);
 }
 footer {
   background-color: var(--black-grey-color);
@@ -56,4 +66,7 @@ header > ul > li > a:hover, header > nav > ul > li > a:hover {
 }
 address {
   font-style: normal;
+}
+footer > a {
+  font-family: var(--second-family);
 }
