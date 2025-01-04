@@ -70,3 +70,6 @@ address {
 footer > a {
   font-family: var(--second-family);
 }
+a {
+  text-decoration-line: none;
+}

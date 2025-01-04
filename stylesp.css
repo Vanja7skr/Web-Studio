@@ -70,3 +70,7 @@ footer > a {
 #sps > li {
   font-family: var(--font-family);
 }
+a {
+  text-decoration-line: none;
+}
+
