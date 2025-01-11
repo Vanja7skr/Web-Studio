@@ -9,9 +9,7 @@
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
 }
-.osoblivosti_zag {
-  display: none;
-}
+
 body,
 a {
   font-family: var(--font-family);
@@ -123,4 +121,8 @@ footer {
 }
 .footer_adr_txt {
   color: var(--white-color);
+}
+/* nepotrib */
+.osoblivosti_zag {
+  display: none;
 }
