@@ -81,23 +81,11 @@ a {
   display: block;
   margin: 0 auto;
 }
-.footer_adr_txt {
-  color: var(--white-color);
-}
-.footer_adr_sps_nachinochka {
-  color: var(--light-grey-color);
-}
 .command_sps_nach_txt {
   color: var(--grey-color);
 }
 address {
   font-style: normal;
-}
-footer > a {
-  font-family: var(--second-family);
-}
-footer {
-  background-color: var(--black-grey-color);
 }
 .chimza {
   font-weight: 700;
@@ -120,9 +108,19 @@ footer {
   font-size: 16px;
   letter-spacing: 0.03em;
 }
+/*Footer*/
+footer {
+  background-color: var(--black-grey-color);
+}
 .footer_adr_txt, .footer_adr_sps_nach {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.footer_adr_sps_nachinochka {
+  color: var(--light-grey-color);
+}
+.footer_adr_txt {
+  color: var(--white-color);
 }
