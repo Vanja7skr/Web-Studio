@@ -1,76 +1,101 @@
-
 :root {
---black-color: rgba(0, 0, 0, 1);
---another-black: rgba(33, 33, 33, 1);
---grey-color: rgba(117, 117, 117, 1);
---black-grey-color: rgba(47, 48, 58, 1);
---blue-color: rgba(33, 150, 243, 1);
---white-color: rgba(255, 255, 255, 1);
---light-grey-color: rgba(255, 255, 255, 0.6);
---font-family: "Roboto", sans-serif;
---second-family: "Raleway", sans-serif;
+  --black-color: rgba(0, 0, 0, 1);
+  --another-black: rgba(33, 33, 33, 1);
+  --grey-color: rgba(117, 117, 117, 1);
+  --black-grey-color: rgba(47, 48, 58, 1);
+  --blue-color: rgba(33, 150, 243, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --light-grey-color: rgba(255, 255, 255, 0.6);
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
 }
-body {
+body,
+a {
   font-family: var(--font-family);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration-line: none;
 }
-header > a {
+/* header */
+.zag {
   font-family: var(--second-family);
-}
-ul > li > p {
-    color: var(--grey-color);
-}
-footer {
-  background-color: var(--black-grey-color);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
 }
 .nachtex {
   color: var(--blue-color);
 }
+.kontexq {
+  color: var(--black-color);
+}
 .kontex {
   color: var(--white-color);
 }
-address > ul > li > a[href^="tel:"], address > ul > li > a[href^="mailto:"] {
-  color: var(--light-grey-color);
-  font-family: roboto;
-}
-.nus > p {
-  color: var(--white-color);
-}
-header > nav > ul > li > a {
-  color: var(--another-black);
-}
-header > ul > li > a {
-  color: var(--grey-color);
-}
-#p {
-    color: var(--blue-color);
-}
-#o {
-    color: var(--black-color);
-}
-h2 {
-    display: none;
-}
-header > ul > li > a:hover, header > nav > ul > li > a:hover {
+.spisokkont_nachinochka:hover,
+.nav_sps_nachinochka:hover {
   color: var(--blue-color);
 }
-.spisok > button:hover {
+.nav_sps_nachinochka {
+  color: var(--another-black);
+}
+.spisokkont_nachinochka {
+  color: var(--grey-color);
+}
+/* main */
+.portfolio_sps_nachinochka {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.portfolio_sps_nachinochka:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
 }
-address {
-  font-style: normal;
-}
-header > a {
-  font-family: var(--second-family);
-}
-footer > a {
-  font-family: var(--second-family);
-}
-#sps > li {
+.portfolio_sps_nach {
   font-family: var(--font-family);
 }
-a {
-  text-decoration-line: none;
+.spspnapov_nachinochka {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
 }
-
+.spspnapov_nach_img {
+  width: 370px;
+  height: 294px;
+}
+.spspnapov_nach_zag {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+/* footer */
+footer {
+  background-color: var(--black-grey-color);
+}
+.footer_adr_txt,
+.footer_adr_sps_nach {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer_adr_sps_nachinochka {
+  color: var(--light-grey-color);
+}
+.footer_adr_txt {
+  color: var(--white-color);
+}
+.footer_adr {
+  font-style: normal;
+}
+/* some other stuff */
+.portfolio_zag {
+  display: none;
+}

@@ -82,9 +82,7 @@ a {
 .command_sps_nach_txt {
   color: var(--grey-color);
 }
-address {
-  font-style: normal;
-}
+
 .chimza {
   font-weight: 700;
   font-size: 36px;
@@ -121,6 +119,9 @@ footer {
 }
 .footer_adr_txt {
   color: var(--white-color);
+}
+.footer_adr {
+  font-style: normal;
 }
 /* nepotrib */
 .osoblivosti_zag {
