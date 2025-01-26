@@ -17,6 +17,9 @@ body {
   font-weight: 500;
 }
 /* header */
+header {
+  padding: 32px 0;
+}
 .zag {
   font-family: var(--second-family);
   font-weight: 700;
@@ -86,7 +89,9 @@ body {
 .command_sps_nach_txt {
   color: var(--grey-color);
 }
-
+.command {
+  margin-bottom: 94px;
+}
 .chimza {
   font-weight: 700;
   font-size: 36px;
@@ -116,7 +121,7 @@ footer {
   background-color: var(--black-grey-color);
 }
 .footer {
-  margin-top: 94px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer_adr_txt,
