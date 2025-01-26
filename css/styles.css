@@ -43,6 +43,7 @@ body {
   color: var(--grey-color);
 }
 /* main */
+
 .ssilochka {
   background-color: var(--black-grey-color);
 }
@@ -50,6 +51,10 @@ body {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.osoblivosti {
+  margin: 94px 0px;
+
 }
 .osoblivosti_sps_nachinochka {
   font-weight: 400;
@@ -65,6 +70,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
+  margin-bottom: 30;
 }
 .ssilochka_knopk {
   background-color: var(--blue-color);
@@ -87,6 +93,9 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.chimzas {
+  margin-bottom: 94px;
+}
 .spsphot_nach_img {
   width: 370px;
   height: 294px;
@@ -106,7 +115,12 @@ body {
 footer {
   background-color: var(--black-grey-color);
 }
-.footer_adr_txt, .footer_adr_sps_nach {
+.footer {
+  margin-top: 94px;
+  padding-bottom: 60px;
+}
+.footer_adr_txt,
+.footer_adr_sps_nach {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -125,3 +139,13 @@ footer {
 .osoblivosti_zag {
   display: none;
 }
+.del {
+  display: none;
+}
+/* container */
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  }
