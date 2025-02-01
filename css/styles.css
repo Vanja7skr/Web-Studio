@@ -17,8 +17,46 @@ body {
   font-weight: 500;
 }
 /* header */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0px; 
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_sps {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
+.spisokkont {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
+.nav_sps_nachinochka {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_sps_nach {
+  row-gap: 50px;
+}
 header {
   padding: 32px 0;
+}
+
+.coitainer {
+  flex-direction: row;
 }
 .zag {
   font-family: var(--second-family);
@@ -46,7 +84,28 @@ header {
   color: var(--grey-color);
 }
 /* main */
-
+.chimzas {
+  display: flex;
+  flex-direction: row;
+}
+.spsphot {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
+.osoblivosti_sps {
+    display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
 .ssilochka {
   background-color: var(--black-grey-color);
 }
@@ -115,6 +174,15 @@ header {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
+}
+.command_sps {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
 }
 /*Footer*/
 footer {
