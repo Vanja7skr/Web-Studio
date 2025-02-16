@@ -127,7 +127,7 @@ header {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 .spspnapov_nach_img {
-  
+
 }
 .spspnapov_nach {
   margin: 0 30px;
@@ -188,7 +188,7 @@ footer {
 }
 /* container */
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
