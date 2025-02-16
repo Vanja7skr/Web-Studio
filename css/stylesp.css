@@ -115,7 +115,7 @@ header {
   flex-wrap: wrap;
   margin-top: 34px;
 }
-.spspnapov_nach {
+.spspnapov {
   column-gap: 30;
   row-gap: 30;
 }
@@ -125,15 +125,6 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   flex-basis: calc((100% - 2 * 30px) / 3);
-}
-.spspnapov_nach_img {
-
-}
-.spspnapov_nach {
-  margin: 0 30px;
-}
-.spspnapov {
-  margin: 0 30px;
 }
 .portfolio_sps_nach {
   font-family: var(--font-family);
