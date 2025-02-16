@@ -114,9 +114,9 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.osoblivosti {
-  margin: 94px 0px;
 
+.osoblivosti {
+  padding: 94px 0;
 }
 .osoblivosti_sps_nachinochka {
   font-weight: 400;
@@ -181,7 +181,8 @@ header {
   padding: 0;
   margin: 0;
   flex-direction: row;
-  column-gap: 50px;
+  
+  justify-content: space-between;
   align-items: center;
 }
 /*Footer*/

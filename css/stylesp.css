@@ -42,16 +42,11 @@ body {
   display: flex;
   justify-content: space-around;
 }
-
 .nav_sps_nach {
   row-gap: 50px;
 }
 header {
   padding: 32px 0;
-}
-
-.portfolio_sps_nachinochka {
-  padding: ;
 }
 .zag {
   font-family: var(--second-family);
@@ -101,9 +96,6 @@ header {
   border: 0cap;
   border-radius: 4px;
 }
-.portfolio {
-
-}
 .portfolio_sps_nachinochka:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
@@ -139,7 +131,6 @@ header {
   letter-spacing: 0.03em;
   color: var(--grey-color);
 }
-
 .spspnapov_nach_zag {
   font-weight: 700;
   font-size: 18px;
