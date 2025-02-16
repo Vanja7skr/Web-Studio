@@ -16,6 +16,47 @@ body {
   font-weight: 500;
 }
 /* header */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_sps {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
+.spisokkont {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
+.nav_sps_nachinochka {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_sps_nach {
+  row-gap: 50px;
+}
+header {
+  padding: 32px 0;
+}
+
+.coitainer {
+  flex-direction: row;
+}
 .zag {
   font-family: var(--second-family);
   font-weight: 700;
@@ -42,16 +83,51 @@ body {
   color: var(--grey-color);
 }
 /* main */
+.portfolio_sps {
+  margin-bottom: 50px;
+}
+.portfolio_sps {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
 .portfolio_sps_nachinochka {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
+  border: 0cap;
+  border-radius: 4px;
 }
 .portfolio_sps_nachinochka:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
+  border: 0cap;
+  border-radius: 4px;
+}
+.spspnapov {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+.spspnapov_nach {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 3 * 10px) / 4);
+}
+.spspnapov_nach {
+  margin: 0 30px;
+}
+.spspnapov {
+  margin: 0 30px;
 }
 .portfolio_sps_nach {
   font-family: var(--font-family);
@@ -66,10 +142,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--grey-color);
 }
-.spspnapov_nach_img {
-  width: 370px;
-  height: 294px;
-}
+
 .spspnapov_nach_zag {
   font-weight: 700;
   font-size: 18px;
@@ -113,4 +186,4 @@ footer {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  }
+}
