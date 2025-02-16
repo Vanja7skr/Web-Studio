@@ -26,19 +26,15 @@ body {
 }
 .nav_sps {
   display: flex;
-  list-style-type: none;
   padding: 0;
   margin: 0;
-  flex-direction: row;
   column-gap: 50px;
   align-items: center;
 }
 .spisokkont {
   display: flex;
-  list-style-type: none;
   padding: 0;
   margin: 0;
-  flex-direction: row;
   column-gap: 50px;
   align-items: center;
 }
@@ -54,8 +50,8 @@ header {
   padding: 32px 0;
 }
 
-.coitainer {
-  flex-direction: row;
+.portfolio_sps_nachinochka {
+  padding: ;
 }
 .zag {
   font-family: var(--second-family);
@@ -105,6 +101,9 @@ header {
   border: 0cap;
   border-radius: 4px;
 }
+.portfolio {
+
+}
 .portfolio_sps_nachinochka:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
@@ -117,11 +116,18 @@ header {
   margin-top: 34px;
 }
 .spspnapov_nach {
+  column-gap: 30;
+  row-gap: 30;
+}
+.spspnapov_nach {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 3 * 10px) / 4);
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+.spspnapov_nach_img {
+  
 }
 .spspnapov_nach {
   margin: 0 30px;
