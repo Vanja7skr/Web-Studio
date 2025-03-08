@@ -112,12 +112,25 @@ header {
   color: var(--white-color);
 }
 
+.spspnapov_nach_zag {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+
+.spspnapov_nachinochka {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+
 .spspnapov {
   display: flex;
   flex-wrap: wrap;
   margin-top: 34px;
-  column-gap: 30px; /* Додано відступи для колонок */
-  row-gap: 30px; /* Додано відступи для рядків */
+  column-gap: 30px; 
+  row-gap: 30px; 
 }
 
 .portfolio_sps_nach {
@@ -133,9 +146,7 @@ header {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--grey-color);
-  padding: 10px; /* Відступи для тексту всередині карток */
- 
+  color: var(--grey-color); 
 }
 
 .spspnapov_nach_zag {
