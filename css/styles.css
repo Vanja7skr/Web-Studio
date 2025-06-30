@@ -1,4 +1,5 @@
 :root {
+  --our_t_color: rgba(245, 244, 250, 1);
   --black-color: rgba(0, 0, 0, 1);
   --another-black: rgba(33, 33, 33, 1);
   --grey-color: rgba(117, 117, 117, 1);
@@ -33,6 +34,7 @@ body {
   flex-direction: row;
   column-gap: 50px;
   align-items: center;
+  margin-left: -250px;
 }
 .spisokkont {
   display: flex;
@@ -111,6 +113,7 @@ header {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .osoblivosti {
@@ -154,9 +157,17 @@ header {
 }
 .command_sps_nach_txt {
   color: var(--grey-color);
+  padding-bottom: 30px;
+  
 }
 .command {
-  margin-bottom: 94px;
+  background-color: var(--our_t_color);
+}
+.command_sps_nach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-color);
 }
 .chimza {
   font-weight: 700;
@@ -178,11 +189,17 @@ header {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 94px;
 }
 .command_sps_nach_zag {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+
 }
 .command_sps {
   display: flex;
@@ -190,11 +207,21 @@ header {
   padding: 0;
   margin: 0;
   flex-direction: row;
-  
+  padding-bottom: 94px;
   justify-content: space-between;
   align-items: center;
 }
 /*Footer*/
+.footer_adr {
+  padding-top: 20px;
+}
+.zagi {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+
+}
 footer {
   background-color: var(--black-grey-color);
 }
@@ -208,6 +235,14 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.footer_adr_sps_nachi {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 .footer_adr_sps_nachinochka {
   color: var(--light-grey-color);

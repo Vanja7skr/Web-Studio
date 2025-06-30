@@ -33,6 +33,7 @@ body {
   margin: 0;
   column-gap: 50px;
   align-items: center;
+  margin-left: -250px;
 }
 
 .spisokkont {
@@ -156,16 +157,24 @@ header {
   letter-spacing: 0.06em;
 }
 
-/* footer */
+/*Footer*/
+.footer_adr {
+  padding-top: 20px;
+}
+.zagi {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+
+}
 footer {
   background-color: var(--black-grey-color);
 }
-
 .footer {
-  padding-bottom: 60px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
-
 .footer_adr_txt,
 .footer_adr_sps_nach {
   font-weight: 400;
@@ -173,15 +182,20 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
+.footer_adr_sps_nachi {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
 .footer_adr_sps_nachinochka {
   color: var(--light-grey-color);
 }
-
 .footer_adr_txt {
   color: var(--white-color);
 }
-
 .footer_adr {
   font-style: normal;
 }
