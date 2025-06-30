@@ -106,9 +106,7 @@ header {
   column-gap: 50px;
   align-items: center;
 }
-.ssilochka {
-  background-color: var(--black-grey-color);
-}
+
 .osoblivosti_sps_nach_zag {
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -124,6 +122,12 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.ssilochka {
+  background-color: var(--black-grey-color);
+  margin: 0 auto;
+  width: 1520px;
+  height: 600px;
+}
 .ssilochka_zag {
   color: var(--white-color);
   text-transform: uppercase;
@@ -133,6 +137,7 @@ header {
   letter-spacing: 0.06em;
   text-align: center;
   margin-bottom: 30;
+  padding-top: 200px;
 }
 .ssilochka_knopk {
   background-color: var(--blue-color);
@@ -144,6 +149,8 @@ header {
   text-align: center;
   display: block;
   margin: 0 auto;
+  border-radius: 5px;
+  border: none;
 }
 .command_sps_nach_txt {
   color: var(--grey-color);
@@ -156,6 +163,7 @@ header {
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 .chimzas {
   margin-bottom: 94px;
@@ -169,6 +177,7 @@ header {
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 .command_sps_nach_zag {
   font-weight: 500;
