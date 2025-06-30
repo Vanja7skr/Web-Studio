@@ -158,6 +158,12 @@ header {
 .command_sps_nach_txt {
   color: var(--grey-color);
   padding-bottom: 30px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #757575;
   
 }
 .command {
