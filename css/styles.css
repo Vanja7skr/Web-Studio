@@ -100,7 +100,7 @@ header {
   align-items: center;
 }
 .osoblivosti_sps {
-    display: flex;
+  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -116,6 +116,45 @@ header {
   padding-bottom: 10px;
 }
 
+
+
+
+#osoblivosti_sps_nach_id1, #osoblivosti_sps_nach_id4 {
+  margin-top: 25px;
+}
+
+#osoblivosti_sps_nach_id1::before {
+  content: url("../img/group1.jpg");
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+#osoblivosti_sps_nach_id2::before {
+  content: url("../img/group2.jpg");
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+#osoblivosti_sps_nach_id3::before {
+  content: url("../img/group2.jpg");
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+#osoblivosti_sps_nach_id4::before {
+  content: url("../img/group4.jpg");
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+
+
+
 .osoblivosti {
   padding: 94px 0;
 }
@@ -124,6 +163,7 @@ header {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 270px;
 }
 .ssilochka {
   background-color: var(--black-grey-color);
