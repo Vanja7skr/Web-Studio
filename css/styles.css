@@ -152,8 +152,15 @@ header {
   margin-bottom: 30px;
 }
 
+.command_sps_nach_photo {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
-
+.command_sps_nach {
+  border-radius: 5px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
 
 .osoblivosti {
   padding: 94px 0;
@@ -166,7 +173,7 @@ header {
   width: 270px;
 }
 .ssilochka {
-  background-color: var(--black-grey-color);
+  background-image: url(../img/iimg.png);
   margin: 0 auto;
   width: 1520px;
   height: 600px;
