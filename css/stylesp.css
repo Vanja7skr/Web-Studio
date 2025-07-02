@@ -19,7 +19,7 @@ body {
 
 /* header */
 .hr {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .flex-container {
   display: flex;
@@ -61,6 +61,7 @@ header {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
+  margin-left: 25px;
 }
 
 .nachtex {
