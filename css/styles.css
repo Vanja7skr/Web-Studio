@@ -144,6 +144,7 @@ header {
   height: 120px;
   margin-bottom: 30px;
 }
+/* i need it to work */
 #osoblivosti_sps_nach_id4::before {
   content: url("../img/group4.jpg");
   display: inline-block;
