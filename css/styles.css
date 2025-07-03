@@ -137,13 +137,13 @@ header {
   height: 120px;
   margin-bottom: 30px;
 }
-#osoblivosti_sps_nach_id3::before {
+/* #osoblivosti_sps_nach_id3::before {
   content: url("../img/group3.jpg");
   display: inline-block;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-}
+} */
 /* i need it to work */
 #osoblivosti_sps_nach_id4::before {
   content: url("../img/group4.jpg");
