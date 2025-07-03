@@ -138,7 +138,7 @@ header {
   margin-bottom: 30px;
 }
 #osoblivosti_sps_nach_id3::before {
-  content: url("../img/group2.jpg");
+  content: url("../img/group3.jpg");
   display: inline-block;
   width: 270px;
   height: 120px;
