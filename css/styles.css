@@ -1,4 +1,5 @@
 :root {
+  --social_color: rgba(175, 177, 184, 1);
   --our_t_color: rgba(245, 244, 250, 1);
   --black-color: rgba(0, 0, 0, 1);
   --another-black: rgba(33, 33, 33, 1);
@@ -137,13 +138,13 @@ header {
   height: 120px;
   margin-bottom: 30px;
 }
-/* #osoblivosti_sps_nach_id3::before {
+#osoblivosti_sps_nach_id3::before {
   content: url("../img/group3.jpg");
   display: inline-block;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-} */
+}
 /* i need it to work */
 #osoblivosti_sps_nach_id4::before {
   content: url("../img/group4.jpg");
@@ -161,6 +162,28 @@ header {
 .command_sps_nach {
   border-radius: 5px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.command_sps_nach_sps_li_a_img {
+  width: 20px;
+  height: 20px;
+  color: var(--social_color);
+}
+
+.spsphot_nach_p {
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  position: relative;
+  top: -70px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding-top: 27px;
 }
 
 .osoblivosti {
@@ -229,9 +252,10 @@ header {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+  margin-left: 60px;
 }
 .chimzas {
-  margin-bottom: 94px;
+  margin-bottom: 20px;
 }
 .spsphot_nach_img {
   width: 370px;
