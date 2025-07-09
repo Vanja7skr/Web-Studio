@@ -18,50 +18,33 @@ body {
 }
 
 /* header */
+/*  */
 .hr {
-  margin-top: 25px;
+  margin-top: -1px;
 }
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+/* Header flex container */
 .flex-container {
   display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 0px;
+  padding: 0px; 
   justify-content: space-between;
   align-items: center;
 }
 
-.nav_sps {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  column-gap: 50px;
-  align-items: center;
-  margin-left: -250px;
-}
-
-.spisokkont {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  column-gap: 50px;
-  align-items: center;
-}
-
-.nav_sps_nachinochka {
-  display: flex;
-  justify-content: space-around;
-}
-
-header {
-  padding: 32px 0;
-}
-
+/* Logo styles */
 .zag {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  margin-left: 25px;
 }
 
 .nachtex {
@@ -72,23 +55,83 @@ header {
   color: var(--black-color);
 }
 
-.kontex {
-  color: var(--white-color);
+/* Navigation list */
+.nav_sps {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+  margin-left: -250px;
+  /* margin-bottom: 4px; */
 }
 
-.spisokkont_nachinochka:hover,
-.nav_sps_nachinochka:hover {
-  color: var(--blue-color);
+/* Navigation list items */
+.nav_sps_nach {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  row-gap: 50px;
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
+
+/* Navigation links */
 
 .nav_sps_nachinochka {
   color: var(--another-black);
 }
+.nav_sps_nachinochka:hover {
+  color: var(--blue-color);
+}
+.active {
+  color: var(--blue-color);
+}
 
+/* Active/current navigation link underline effect */
+.nav_sps_nach::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background-color: var(--blue-color);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Underline only for active link */
+.nav_sps_nach.current::after {
+  width: 100%;
+}
+
+/* Contact list */
+.spisokkont {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
+
+/* Contact links */
 .spisokkont_nachinochka {
   color: var(--grey-color);
 }
 
+.spisokkont_nachinochka:hover {
+  color: var(--blue-color);
+}
+
+/* Hidden element */
+.del {
+  display: none;
+}
 /* main */
 .portfolio_sps {
   margin-bottom: 50px;
