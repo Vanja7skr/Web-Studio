@@ -67,10 +67,75 @@
       <!-- <div class="container"> -->
         <section class="ssilochka">
           <h1 class="ssilochka_zag">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br>ВАШЕГО БІЗНЕСУ</h1>
-          <button type="button" class="ssilochka_knopk">
+          <button type="button" class="ssilochka_knopk" data-modal-open>
             Замовити послугу
           </button>
-      <!-- </div> -->
+          <div class="backdrop is-hidden" data-modal="">
+
+<div class="modal">
+
+  <button class="modal__button modal__button--close" type="button" aria-label="Кнопка закриття модального вікна" data-modal-close="">
+
+    <img src="./img/close_bla.png" alt="">
+  </button>
+
+  <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+
+  <form class="form-service_order" name="form-service_order" autocomplete="off" method="POST">
+
+    <label class="formfield-label">
+      <span>Ім’я</span>
+      <div class="formfield-input-wrap">
+        <input class="formfield-input" required type="text" name="name" autocomplete="on" placeholder=" ">
+        <img class="formfield-input-wrap__icon" src="./img/per.png" alt="іконка людини">
+      </div>
+    </label>
+
+    <label class="formfield-label">
+      <span>Телефон</span>
+      <div class="formfield-input-wrap">
+        <input class="formfield-input" type="tel" required name="phone_number" placeholder=" ">
+
+        <img class="formfield-input-wrap__icon" src="./img/phone.png" alt="іконка телефону">
+      </div>
+    </label>
+
+    <label class="formfield-label">
+      <span>Пошта</span>
+      <div class="formfield-input-wrap">
+        <input class="formfield-input" type="email" required name="email" autocomplete="on" placeholder=" ">
+
+        <img class="formfield-input-wrap__icon" required src="./img/mail.png" alt="Іконка пошти">
+      </div>
+    </label>
+
+    <label class="formfield-label">
+      Коментар
+      <textarea id="commentt" class="formfield-textarea" name="comment" rows="4" placeholder="Введіть текст"></textarea>
+    </label>
+
+    <div class="form-service_order--centered">
+
+      <div class="form-service_order--concord">
+
+        <label class="formfield-label form-service_order__label--concord">
+          <input class="formfield-checkbox visually-hidden" type="checkbox" name="checkbox_concord" value="true">
+          <span class="formfield-checkbox-icon"></span>
+          Погоджуюсь на розсилку та приймаю
+        </label>
+
+        <a class="formfield-checkbox-link" href="#">Умови договору</a>
+
+      </div>
+
+      <button class="form-service_order__button-submit" type="submit">
+        Надіслати
+      </button>
+    </div>
+  </form>
+</div>
+
+    </div>
         </section>
         <section class="osoblivosti">
             <div class="container">
@@ -217,5 +282,7 @@
       </div>
       </section>
     </footer>
+    <script src="./js/modal.js?1"></script>
+
   </body>
 </html>
