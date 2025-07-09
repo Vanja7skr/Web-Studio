@@ -51,6 +51,11 @@ body {
   justify-content: space-around;
 }
 
+.nav_sps_nach::after {
+  content: "";
+  text-decoration: underline;
+}
+
 .nav_sps_nach {
   row-gap: 50px;
 }
