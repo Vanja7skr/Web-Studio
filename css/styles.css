@@ -302,12 +302,16 @@ header {
   letter-spacing: 0.03em;
 
 }
-footer {
-  background-color: var(--black-grey-color);
+.media {
+  width: 206px;
 }
-.footer {
+.pidps_div {
+  display: flex;
+}
+footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--black-grey-color);
 }
 .footer_adr_txt,
 .footer_adr_sps_nach {
@@ -631,9 +635,55 @@ color: #757575;
   border-color: #2196f3;
 }
 
+.pidps-sub-s {
+  background-image: url(../img/plane.png);
+  width: 24px;
+  height: 24px;
+}
+.pidps_s {
+  margin-right: 175px;
+}
+.pidps {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
 
-
-
+.pidps-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+width: 358px;
+height: 50px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: rgba(33, 150, 243, 0);
+}
+.pidps-sub {
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+  color: white;
+  display: flex;
+  padding-top: 6px;
+  margin-left: 12px;
+  align-items: center;
+}
+.pidps-sub-span {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 16px;
+line-height: 187%;
+letter-spacing: 0.06em;
+text-align: center;
+color: #fff;
+margin-left: 28px;
+margin-right: 10px;
+}
 
 .formfield-checkbox-link {
   font-family: var(--font-family);
@@ -687,4 +737,15 @@ color: #757575;
 #commentt {
   padding-left: 16px;
 }
-
+.ul_c {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer {
+  margin-left: 175px;
+  width: 231px;
+}
