@@ -17,6 +17,7 @@ body {
   letter-spacing: 0.02em;
   font-size: 14px;
   font-weight: 500;
+
 }
 /* header */
 .flex-container {
@@ -26,6 +27,9 @@ body {
   padding: 0px; 
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+  }
 }
 .active {
   color: var(--blue-color);
@@ -39,7 +43,10 @@ body {
   column-gap: 50px;
   align-items: center;
   margin-left: -250px;
-  /* margin-bottom: 4px; */
+
+    @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 .nav_sps_nach {
   position: relative;
@@ -137,6 +144,10 @@ body {
   flex-direction: row;
   column-gap: 50px;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    flex: 100%;
+    
+  }
 }
 
 .is-hidden {
@@ -218,19 +229,23 @@ body {
 
 .osoblivosti {
   padding: 94px 0;
+
 }
+
+
 .osoblivosti_sps_nachinochka {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 270px;
+  max-width: 100%;
 }
 .ssilochka {
   background-image: url(../img/iimg.png);
   margin: 0 auto;
-  width: 1520px;
-  height: 600px;
+  max-width: 1520px;
+  max-height: 600px;
+  padding-bottom: 200px;
 }
 
 .ssilochka_zag {
@@ -256,6 +271,7 @@ body {
   margin: 0 auto;
   border-radius: 5px;
   border: none;
+
 }
 .command_sps_nach_txt {
   color: var(--grey-color);
@@ -284,6 +300,9 @@ body {
   text-align: center;
   margin-bottom: 50px;
   margin-left: 60px;
+  @media screen and (max-width: 480px) {
+    margin-left: 0px;
+  }
 }
 .chimzas {
   margin-bottom: 20px;
@@ -319,6 +338,9 @@ body {
   padding-bottom: 94px;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 }
 /*Footer*/
 .footer_adr {
@@ -333,9 +355,17 @@ body {
 }
 .media {
   width: 206px;
+  /* @media screen and (max-width: 480px) {
+    display
+  } */
+   visibility: hidden;
 }
+
 .pidps_div {
   display: flex;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 }
 footer {
   padding-top: 60px;
@@ -379,6 +409,9 @@ footer {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
   }
 
 
@@ -417,7 +450,7 @@ footer {
   display: block;
   margin: 0 auto;
   padding: 40px;
-  width: 528px;
+  max-width: 528px;
   height: auto;
   overflow-y: scroll;
   background-color: #fff;
@@ -650,7 +683,7 @@ color: #757575;
 .formfield-checkbox-icon {
   display: block;
   content: "";
-  margin: 0;
+  /* margin: 0; */
   margin-right: 5px;
   width: 16px;
   min-width: 16px;
@@ -671,6 +704,10 @@ color: #757575;
 }
 .pidps_s {
   margin-right: 175px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .pidps {
   font-family: var(--font-family);
@@ -680,6 +717,9 @@ color: #757575;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 20px;
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 }
 
 .pidps-input {
@@ -689,6 +729,9 @@ width: 358px;
 height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: rgba(33, 150, 243, 0);
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 }
 .pidps-sub {
   border-radius: 4px;
@@ -701,6 +744,10 @@ background: rgba(33, 150, 243, 0);
   padding-top: 6px;
   margin-left: 12px;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 .pidps-sub-span {
   font-family: var(--font-family);
@@ -777,4 +824,146 @@ footer {
 .footer {
   margin-left: 175px;
   width: 231px;
+  @media screen and (max-width: 480px) {
+    margin: 0 auto;
+    margin-left: 150px;
+  }
+}
+ @media screen and (max-width:480px) {
+    .body, section {
+      max-width: 100%;
+    }
+    .osoblivosti_sps, .spsphot, .command_sps  {
+      width: 100%;
+      flex: 100%;
+      flex-direction: column;
+    }
+    .osoblivosti_sps_nach, .command_sps_nach {
+      max-width: 100%;
+    }
+    .nav, .spisokkont {
+      display: none;
+    }
+    .command {
+      height: auto;
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+      flex: 100%;
+    }
+    .ssilochka_zag {
+      font-family: var(--font-family);
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 162%;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+
+    }
+    .media {
+      margin: 0 auto;
+    }
+    header {
+      height: 80px;
+    }
+    .zag {
+      margin-top: 30px;
+    }
+    .command_sps_nach {
+      width: 100%;
+      height: 622px;
+      margin-bottom: 30px;
+    }
+    .chimzas {
+      display: none;
+    }
+    .command_sps_nach_photo {
+      width: 100%;
+      height: 460px;
+    }
+    .menu_40px {
+      background-image: url(../img/menu_40px.png);
+      width: 40px;
+      height: 40px;
+      position: relative;
+      left: 400px;
+      bottom: 32px;
+    }
+    .ssilochka {
+      background-image: url(../img/iiimg.png);
+      margin: 0 auto;
+      width: 100%;
+      height: 400px;
+    }
+    .backdrop {
+      width: 100%;
+    }
+    .modal {
+      width: 450px;
+    }
+    .form-service_order__label--concord_p {
+      height: 14px;
+      /* width: 346px; */
+
+    }
+    .formfield-checkbox-icon {
+      margin-left: -25px;
+    }
+    .formfield-checkbox-link {
+      margin: 0px;
+    }
+    .osoblivosti_sps, .osoblivosti_sps_nach {
+      width: 100%;
+    }
+    #osoblivosti_sps_nach_id1::before {
+      content: url("../img/group1.jpg");
+      display: inline-block;
+      width: 450px;
+      height: auto;
+      margin-bottom: 30px;
+      text-align: center;
+      background-color: rgba(245, 244, 250, 1);
+    }
+    #osoblivosti_sps_nach_id2::before {
+      content: url("../img/group2.jpg");
+      display: inline-block;
+      width: 450px;
+      height: auto;
+      margin-bottom: 30px;
+      text-align: center;
+      background-color: rgba(245, 244, 250, 1);
+    }
+    #osoblivosti_sps_nach_id3::before {
+      content: url("../img/group3.jpg");
+      display: inline-block;
+      width: 450px;
+      height: auto;
+      margin-bottom: 30px;
+      text-align: center;
+      background-color: rgba(245, 244, 250, 1);
+    }
+    #osoblivosti_sps_nach_id4::before {
+      content: url("../img/group4.jpg");
+      display: inline-block;
+      width: 450px;
+      height: auto;
+      margin-bottom: 30px;
+      text-align: center;
+      background-color: rgba(245, 244, 250, 1);
+    }
+    .osoblivosti_sps_nach_zag {
+      text-align: center;
+    }
+    .osoblivosti_sps_nachinochka {
+      max-width: 100%;
+    }
+    .osoblivosti {
+      padding-top: 60px;
+    }
+    .ssilochka_zag {
+      padding-top: 118px;
+    }
 }
