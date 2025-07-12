@@ -962,8 +962,18 @@ footer {
     }
     .osoblivosti {
       padding-top: 60px;
+      padding-bottom: 60px;
     }
     .ssilochka_zag {
       padding-top: 118px;
+    }
+    .osoblivosti_sps_nachinochka {
+      margin-bottom: 30px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.03em;
+      color: #757575;
     }
 }
