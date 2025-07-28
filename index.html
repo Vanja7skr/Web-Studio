@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
   <body>
     <!-- Header -->
@@ -34,6 +35,7 @@
           <nav class="nav">
             <ul class="nav_sps">
               <li class="nav_sps_nach current">
+
                 <a href="./index.html" class="nav_sps_nachinochk active">Студія</a>
               </li>
               <li class="nav_sps_nach">
@@ -175,7 +177,13 @@
         <ul class="spsphot">
           <li class="spsphot_nach">
             <img
-              src="./img/img.png"
+              srcset="
+                  ./img/do1@1x.png   270w,
+                  ./img/do1@2x.png    540w,
+                  ./img/do1@3x.png    810w,
+              "
+              sizes="100vw"
+              src="./img/do1@1x.png"
               alt="лудина займаетя кодингом на комп'ютері"
               class="spsphot_nach_img"
             />
@@ -183,7 +191,13 @@
           </li>
           <li>
             <img
-              src="./img/box2.png"
+              srcset="
+                  ./img/do2@1x.png   270w,
+                  ./img/do2@2x.png    540w,
+                  ./img/do2@3x.png    810w,
+              "
+              sizes="100vw"
+              src="./img/do2@1x.png"
               alt="Людина дивится в телефон а на фоні стоїть комп'ютер"
               class="spsphot_nach_img"
             />
@@ -191,7 +205,13 @@
           </li>
           <li>
             <img
-              src="./img/box3.png"
+              srcset="
+                  ./img/do3@1x.png   270w,
+                  ./img/do3@2x.png    540w,
+                  ./img/do3@3x.png    810w,
+              "
+              sizes="100vw"
+              src="./img/do3@1x.png"
               alt="Людина малюе стілусом на спеціальному планшеті"
               class="spsphot_nach_img"
             />
@@ -206,8 +226,49 @@
           <h2 class="command_zag">Наша команда</h2>
           <ul class="command_sps">
             <li class="command_sps_nach">
+              <!-- <picture class="thumb">
+                <source
+                  srcset="
+                    ./img/team1@3x.png
+                  "
+                  media="(min-width:1200px)"
+                  alt="1"
+              />
+              <source
+                srcset="
+                  ./img/team1@2x.png
+                "
+                media="(min-width:768px)"
+                alt="2"
+              />
+              <source
+                srcset="
+                  ./img/team1@1x.png
+                "
+                media="(max-width:767px)"
+                alt="3"
+              />
+              <img src="./img/team1@1x.png" alt=""                 
+                width="270"
+                height="260"
+                alt="Людина чіловічого роду середніх років"
+                class="command_sps_nach_photo" />
+            </picture> -->
+
+
+
+
+
+
+
               <img
-                src="./img/img.jpg"
+                srcset="
+                  ./img/team1@1x.png   270w,
+                  ./img/team1@2x.png    540w,
+                  ./img/team1@3x.png    810w,
+                "
+                sizes="100vw"
+                src="./img/team1@1x.png"
                 width="270"
                 height="260"
                 alt="Людина чіловічого роду середніх років"
@@ -218,7 +279,13 @@
             </li>
             <li class="command_sps_nach">
               <img
-                src="./img/img(1).jpg"
+                srcset="
+                  ./img/team2@1x.png   270w,
+                  ./img/team2@2x.png    540w,
+                  ./img/team2@3x.png    810w,
+                "
+                sizes="100vw"
+                src="./img/team2@1x.png"
                 width="270"
                 height="260"
                 alt="Людина жіночиго роду середніх років"
@@ -230,7 +297,13 @@
             </li>
             <li class="command_sps_nach">
               <img
-                src="./img/img(2).jpg"
+                srcset="
+                  ./img/team3@1x.png   270w,
+                  ./img/team3@2x.png    540w,
+                  ./img/team3@3x.png    810w,
+                "
+                sizes="100vw"
+                src="./img/team3@1x.png"
                 width="270"
                 height="260"
                 alt="Людина чіловічого роду середніх років"
@@ -241,7 +314,13 @@
             </li>
             <li class="command_sps_nach">
               <img
-                src="./img/img(3).jpg"
+                srcset="
+                  ./img/team4@1x.png   270w,
+                  ./img/team4@2x.png    540w,
+                  ./img/team4@3x.png    810w,
+                "
+                sizes="100vw"
+                src="./img/team4@1x.png"
                 width="270"
                 height="260"
                 alt="Людина чіловічого роду середніх років"

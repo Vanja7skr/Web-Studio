@@ -138,6 +138,9 @@ body {
   column-gap: 50px;
   align-items: center;
 }
+.try {
+  fill: aquamarine !important;
+}
 
 .is-hidden {
   display: none;
