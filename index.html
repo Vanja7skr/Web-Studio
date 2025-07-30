@@ -50,14 +50,24 @@
           </nav>
           <ul class="spisokkont">
             <li class="spisokkont_nach">
+
               <a href="mailto:info@devstudio.com" class="spisokkont_nachinochka"
-                >info@devstudio.com</a
+                >
+                <svg class="spisokkont_svg" class="">
+                <use href="./icon/symbol-defs.svg#icon-header_mail">
+                </use>
+              </svg> info@devstudio.com</a
               >
             </li>
             <li class="spisokkont_nach">
               <a href="tel:+380961111111" class="spisokkont_nachinochka"
-                >+38 096 111 11 11</a
-              >
+                >
+                <svg class="spisokkont_svg swg_phone" class="">
+                  <use href="./icon/symbol-defs.svg#icon-header_phone">
+                  </use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
           </div>
@@ -78,7 +88,9 @@
 
   <button class="modal__button modal__button--close" type="button" aria-label="Кнопка закриття модального вікна" data-modal-close="">
 
-    <img src="./img/close_bla.png" alt="">
+    <svg class="modal_svg">
+      <use href="./icon/symbol-defs.svg#icon-modal_exit">1</use>
+    </svg>
   </button>
 
   <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
@@ -89,7 +101,9 @@
       <span>Ім’я</span>
       <div class="formfield-input-wrap">
         <input class="formfield-input" required type="text" name="name" autocomplete="on" placeholder=" ">
-        <img class="formfield-input-wrap__icon" src="./img/per.png" alt="іконка людини">
+        <svg class="formfield-input-wrap__icon modal_svg1">
+          <use href="./icon/symbol-defs.svg#icon-modal_person"></use>
+        </svg>
       </div>
     </label>
 
@@ -98,7 +112,9 @@
       <div class="formfield-input-wrap">
         <input class="formfield-input" type="tel" required name="phone_number" placeholder=" ">
 
-        <img class="formfield-input-wrap__icon" src="./img/phone.png" alt="іконка телефону">
+          <svg class="formfield-input-wrap__icon modal_svg2">
+          <use href="./icon/symbol-defs.svg#icon-modal_phone"></use>
+        </svg>
       </div>
     </label>
 
@@ -107,7 +123,9 @@
       <div class="formfield-input-wrap">
         <input class="formfield-input" type="email" required name="email" autocomplete="on" placeholder=" ">
 
-        <img class="formfield-input-wrap__icon" required src="./img/mail.png" alt="Іконка пошти">
+          <svg class="formfield-input-wrap__icon modal_svg3">
+          <use href="./icon/symbol-defs.svg#icon-modal_mail"></use>
+        </svg>
       </div>
     </label>
     
@@ -226,41 +244,6 @@
           <h2 class="command_zag">Наша команда</h2>
           <ul class="command_sps">
             <li class="command_sps_nach">
-              <!-- <picture class="thumb">
-                <source
-                  srcset="
-                    ./img/team1@3x.png
-                  "
-                  media="(min-width:1200px)"
-                  alt="1"
-              />
-              <source
-                srcset="
-                  ./img/team1@2x.png
-                "
-                media="(min-width:768px)"
-                alt="2"
-              />
-              <source
-                srcset="
-                  ./img/team1@1x.png
-                "
-                media="(max-width:767px)"
-                alt="3"
-              />
-              <img src="./img/team1@1x.png" alt=""                 
-                width="270"
-                height="260"
-                alt="Людина чіловічого роду середніх років"
-                class="command_sps_nach_photo" />
-            </picture> -->
-
-
-
-
-
-
-
               <img
                 srcset="
                   ./img/team1@1x.png   270w,
@@ -276,6 +259,36 @@
               />
               <h3 class="command_sps_nach_zag">Ігор Дем'яненко</h3>
               <p class="command_sps_nach_txt">Product Designer</p>
+              <ul class="te_sps">
+                <li class="te_sps_li">
+                  <a target="_blank" class="te_sps_li_a" href="https://www.instagram.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-instagram">1</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://x.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-twitter">2</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.facebook.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-facebook">3</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.linkedin.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-linkedin">4</use>
+                  </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="command_sps_nach">
               <img
@@ -293,8 +306,37 @@
               />
 
               <h3 class="command_sps_nach_zag">Ольга Рєпіна</h3>
-              <p class="command_sps_nach_txt">Product Designer</p>
-            </li>
+              <p class="command_sps_nach_txt">Frontend Developer</p>
+              <ul class="te_sps">
+                <li class="te_sps_li">
+                  <a target="_blank" class="te_sps_li_a" href="https://www.instagram.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-instagram">1</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://x.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-twitter">2</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.facebook.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-facebook">3</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.linkedin.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-linkedin">4</use>
+                  </svg>
+                  </a>
+                </li>
+              </ul>
             <li class="command_sps_nach">
               <img
                 srcset="
@@ -311,6 +353,36 @@
               />
               <h3 class="command_sps_nach_zag">Микола Тарасов</h3>
               <p class="command_sps_nach_txt">Marketing</p>
+              <ul class="te_sps">
+                <li class="te_sps_li">
+                  <a target="_blank" class="te_sps_li_a" href="https://www.instagram.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-instagram">1</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://x.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-twitter">2</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.facebook.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-facebook">3</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.linkedin.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-linkedin">4</use>
+                  </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="command_sps_nach">
               <img
@@ -328,15 +400,101 @@
               />
               <h3 class="command_sps_nach_zag">Михайло Єрмаков</h3>
               <p class="command_sps_nach_txt">UI Designer</p>
+              <ul class="te_sps">
+                <li class="te_sps_li">
+                  <a target="_blank" class="te_sps_li_a" href="https://www.instagram.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-instagram">1</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://x.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-twitter">2</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.facebook.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-facebook">3</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.linkedin.com/">
+                  <svg class="te_sps_li_svg">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-linkedin">4</use>
+                  </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
           </div>
         </section>
+        <section class="chimzas clients">
+      <div class="container">
+        <h2 class="chimza clients_h2">Постійні клієнти</h2>
+        <ul class="clients_ul">
+          <li class="clients_li">
+            <a width="150px" class="clients_a" href="">
+            <svg class="clients_svg" id="clients_svg1">
+              <use  class="clients_svg_use" href="./icon/symbol-defs.svg#icon-2_squers">
+              </use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients_li">
+            <a class="clients_a" href="">
+            <svg class="clients_svg" id="clients_svg2">
+              <use class="clients_svg_use" href="./icon/symbol-defs.svg#icon-svg_company">
+              </use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients_li">
+            <a class="clients_a" href="">
+            <svg class="clients_svg" id="clients_svg3">
+              <use class="clients_svg_use" href="./icon/symbol-defs.svg#icon-grape">
+              </use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients_li">
+            <a class="clients_a" href="">
+            <svg class="clients_svg" id="clients_svg4">
+              <use class="clients_svg_use" href="./icon/symbol-defs.svg#icon-faster_steps">
+              </use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients_li">
+            <a class="clients_a" href="">
+            <svg class="clients_svg" id="clients_svg5">
+              <use class="clients_svg_use" href="./icon/symbol-defs.svg#icon-brand">
+              </use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients_li">
+            <a class="clients_a" href="">
+            <svg class="clients_svg" id="clients_svg6">
+              <use class="clients_svg_use" href="./icon/symbol-defs.svg#icon-company">
+              </use>
+            </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer>
       <div class="container">
-      <section class="footer">
+        <section class="foot">
+      <div class="footer">
         <h2 class="del">Something</h2>
         <a href="/" class="zagi"
           ><span class="nachtex">Web</span><span class="kontex">Studio</span>
@@ -358,21 +516,45 @@
             </li>
           </ul>
         </address>
-        </section>
-        </div>
-        <div class="container">
-        <section class="media">
-        <h2>приєднуйтесь</h2>
-        <ul class="ul_c">
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-        </ul>
-        </section>
-        </div>
-        <div class="container">
-        <section class="pidps_s">
+      </div>
+
+
+        <div class="media">
+        <h2 class="foot_h2">приєднуйтесь</h2>
+        <ul class="te_sps">
+                <li class="te_sps_li">
+                  <a target="_blank" class="te_sps_li_a" href="https://www.instagram.com/">
+                  <svg class="te_sps_li_svg swg_foot_b">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-instagram">1</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://x.com/">
+                  <svg class="te_sps_li_svg swg_foot_b">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-twitter">2</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.facebook.com/">
+                  <svg class="te_sps_li_svg swg_foot_b">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-facebook">3</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.linkedin.com/">
+                  <svg class="te_sps_li_svg swg_foot_b">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-linkedin">4</use>
+                  </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+        <div class="pidps_s">
           <h2 class="pidps" >Підпишіться на розсилку</h2>
             <div class="pidps_div">
             <input class="pidps-input" type="email" required name="email" autocomplete="on" placeholder="E-mail">
@@ -380,6 +562,7 @@
 
           </div>
         </label>
+      </div>
         </section>
         </div>
 

@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Header -->
-<header>
+ <header>
       <section class="header">
         <div class="container">
           <div class="flex-container">
@@ -34,7 +34,8 @@
           <nav class="nav">
             <ul class="nav_sps">
               <li class="nav_sps_nach">
-                <a href="./index.html" class="nav_sps_nachinochka">Студія</a>
+
+                <a href="./index.html" class="nav_sps_nachinochk header_li">Студія</a>
               </li>
               <li class="nav_sps_nach current">
                 <a href="./portfolio.html" class="nav_sps_nachinochka active"
@@ -48,14 +49,24 @@
           </nav>
           <ul class="spisokkont">
             <li class="spisokkont_nach">
+
               <a href="mailto:info@devstudio.com" class="spisokkont_nachinochka"
-                >info@devstudio.com</a
+                >
+                <svg class="spisokkont_svg" class="">
+                <use href="./icon/symbol-defs.svg#icon-header_mail">
+                </use>
+              </svg> info@devstudio.com</a
               >
             </li>
             <li class="spisokkont_nach">
               <a href="tel:+380961111111" class="spisokkont_nachinochka"
-                >+38 096 111 11 11</a
-              >
+                >
+                <svg class="spisokkont_svg swg_phone" class="">
+                  <use href="./icon/symbol-defs.svg#icon-header_phone">
+                  </use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
           </div>
@@ -237,10 +248,11 @@
       </section>
     </main>
     <!-- footer -->
-    <footer>
-      <section class="footer">
-        <h2 class="del">Something</h2>
+        <footer>
       <div class="container">
+        <section class="foot">
+      <div class="footer">
+        <h2 class="del">Something</h2>
         <a href="/" class="zagi"
           ><span class="nachtex">Web</span><span class="kontex">Studio</span>
         </a>
@@ -262,7 +274,56 @@
           </ul>
         </address>
       </div>
-      </section>
+
+
+        <div class="media">
+        <h2 class="foot_h2">приєднуйтесь</h2>
+        <ul class="te_sps">
+                <li class="te_sps_li">
+                  <a target="_blank" class="te_sps_li_a" href="https://www.instagram.com/">
+                  <svg class="te_sps_li_svg swg_foot_b">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-instagram">1</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://x.com/">
+                  <svg class="te_sps_li_svg swg_foot_b">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-twitter">2</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.facebook.com/">
+                  <svg class="te_sps_li_svg swg_foot_b">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-facebook">3</use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="te_sps_li">
+                  <a target="_blank" href="https://www.linkedin.com/">
+                  <svg class="te_sps_li_svg swg_foot_b">
+                    <use class="te_sps_li_svg_use" href="./icon/symbol-defs.svg#icon-linkedin">4</use>
+                  </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+        <div class="pidps_s">
+          <h2 class="pidps" >Підпишіться на розсилку</h2>
+            <div class="pidps_div">
+            <input class="pidps-input" type="email" required name="email" autocomplete="on" placeholder="E-mail">
+            <button class="pidps-sub"> <span class="pidps-sub-span">Підписатися</span><div class="pidps-sub-s"></div></button>
+
+          </div>
+        </label>
+      </div>
+        </section>
+        </div>
+
+
     </footer>
   </body>
 </html>
