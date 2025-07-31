@@ -641,15 +641,13 @@ body {
   height: 40px;
 }
 
-.formfield-input-wrap:hover {
-  fill: var(--blue-color);
-}
+
 
 .formfield-input-wrap__icon {
   position: absolute;
   top: 35%;
   left: 12px;
-  fill: black;
+
 }
 
 .formfield-input {
@@ -666,9 +664,19 @@ body {
   transition-property: color, border-color;
 }
 
+
+
 .formfield-input:hover,
+.formfield-input:focus,
 .formfield-input:active {
-  border-color: #2196f3;
+  border: none;
+  outline: none;
+  border: 1px solid var(--blue-color);
+}
+
+.formfield-input:hover + svg use,
+.formfield-input:focus + svg use,
+.formfield-input:active + svg use {
   fill: var(--blue-color);
 }
 
@@ -694,6 +702,7 @@ body {
 
 .formfield-textarea:hover,
 .formfield-textarea:focus {
+    outline: none;
   border-color: #2196f3;
 }
 
@@ -774,20 +783,7 @@ body {
 }
 
 .formfield-checkbox-link {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  margin-top: 3px;
-  margin-left: 5px;
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: .01em;
   text-decoration: underline;
-  color: #2196f3;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
   color: #2196f3;
 }
 
@@ -942,6 +938,8 @@ footer {
   height: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
+  padding-left: 10px;
+  color: white;
 }
 
 .pidps-sub {
