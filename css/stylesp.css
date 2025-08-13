@@ -105,12 +105,21 @@ body {
   height: 4px;
   width: 0;
   background-color: var(--blue-color);
-  transition: width 0.3s ease;
+    transition-property: height;
+  transition-duration: 250ms;
+  /* transition: width 0.3s ease; */
+
   border-radius: 2px;
 }
 
-.nav_sps_nach.current::after {
+.current::after {
   width: 100%;
+}
+
+.current:hover::after  {
+  height: 0px;
+  transition-property: height;
+  transition-duration: 250ms;
 }
 
 .nav_sps_nachinochka {
@@ -119,8 +128,11 @@ body {
   color: var(--another-black);
 }
 
-.nav_sps_nachinochka:hover {
+.nav_sps_nachinochka:hover, 
+.nav_sps_nachinochka:focus {
   color: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
@@ -145,18 +157,24 @@ body {
   width: 161px;
 }
 
-.spisokkont_nach:hover {
+.spisokkont_nach:hover, 
+.spisokkont_nach:focus {
   display: flex;
   text-align: center;
   fill: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .spisokkont_nachinochka {
   color: var(--grey-color);
 }
 
-.spisokkont_nachinochka:hover {
+.spisokkont_nachinochka:hover,
+.spisokkont_nachinochka:focus {
   color: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .spisokkont_svg {
@@ -166,8 +184,11 @@ body {
   margin: 0;
 }
 
-.spisokkont_svg:hover {
+.spisokkont_svg:hover,
+.spisokkont_svg:focus {
   fill: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .swg_phone {
@@ -216,12 +237,15 @@ body {
   transition: all 0.3s ease;
 }
 
-.portfolio_sps_nachinochka:hover {
+.portfolio_sps_nachinochka:hover,
+.portfolio_sps_nachinochka:focus {
   background-color: var(--blue-color);
   color: var(--white-color);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 
               0 1px 2px 0 rgba(0, 0, 0, 0.08), 
               0 3px 1px 0 rgba(0, 0, 0, 0.1);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio Items Grid */
@@ -234,6 +258,12 @@ body {
 }
 .header_li {
   color: #000;
+}
+.header_li:hover,
+.header_li:active {
+  color: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Individual Portfolio Items */
@@ -266,10 +296,14 @@ body {
 
 .spspnapov_nach:hover .port_list_hov {
   opacity: 1;
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .spspnapov_nach:hover {
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
@@ -420,9 +454,17 @@ footer {
   border-radius: 12px;
 }
 
-.te_sps_li_svg:hover {
+.te_sps_li_svg:hover,
+.te_sps_li_svg:focus {
   fill: white;
   background-color: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.te_sps_li_svg{
+
+  fill: white;
+
 }
 
 /* Footer subscription */

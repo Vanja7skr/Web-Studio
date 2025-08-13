@@ -125,13 +125,23 @@ body {
   height: 4px;
   width: 0;
   background-color: var(--blue-color);
-  transition: width 0.3s ease;
+    transition-property: height;
+  transition-duration: 250ms;
+  /* transition: width 0.3s ease; */
+
   border-radius: 2px;
 }
 
-.nav_sps_nach.current::after {
+.current::after {
   width: 100%;
 }
+
+.current:hover::after  {
+  height: 0px;
+  transition-property: height;
+  transition-duration: 250ms;
+}
+
 
 .nav_sps_nachinochka {
   display: flex;
@@ -139,8 +149,11 @@ body {
   color: var(--another-black);
 }
 
-.nav_sps_nachinochka:hover {
+.nav_sps_nachinochka:hover, .nav_sps_nachinochka:focus {
   color: var(--blue-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .active {
@@ -165,18 +178,22 @@ body {
   width: 161px;
 }
 
-.spisokkont_nach:hover {
+.spisokkont_nach:hover, .spisokkont_nach:focus {
   display: flex;
   text-align: center;
   fill: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .spisokkont_nachinochka {
   color: var(--grey-color);
 }
 
-.spisokkont_nachinochka:hover {
+.spisokkont_nachinochka:hover, .spisokkont_nachinochka:focus {
   color: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .spisokkont_svg {
@@ -186,8 +203,10 @@ body {
   margin: 0;
 }
 
-.spisokkont_svg:hover {
+.spisokkont_svg:hover, .spisokkont_svg:focus {
   fill: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .swg_phone {
@@ -431,9 +450,11 @@ body {
   border-radius: 12px;
 }
 
-.te_sps_li_svg:hover {
+.te_sps_li_svg:hover, .te_sps_li_svg:focus  {
   fill: white;
   background-color: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .command_sps_nach_sps_li_a_img {
@@ -468,9 +489,11 @@ body {
   fill: rgb(174, 176, 184);
 }
 
-.clients_li:hover {
+.clients_li:hover, .clients_li:focus {
   fill: var(--blue-color);
   border-color: var(--blue-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Client SVG icons */
@@ -593,6 +616,8 @@ body {
 .modal__button:hover,
 .modal__button:focus {
   fill: #2196f3;
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_svg {
@@ -672,12 +697,16 @@ body {
   border: none;
   outline: none;
   border: 1px solid var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .formfield-input:hover + svg use,
 .formfield-input:focus + svg use,
 .formfield-input:active + svg use {
   fill: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .formfield-textarea {
@@ -704,6 +733,8 @@ body {
 .formfield-textarea:focus {
     outline: none;
   border-color: #2196f3;
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .formfield-textarea::-webkit-input-placeholder {
@@ -754,6 +785,8 @@ body {
 .formfield-checkbox:hover,
 .formfield-checkbox:focus {
   border-color: #2196f3;
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .formfield-checkbox:checked + .formfield-checkbox-icon {
@@ -780,6 +813,8 @@ body {
 .formfield-checkbox:hover + .formfield-checkbox-icon,
 .formfield-checkbox:focus + .formfield-checkbox-icon {
   border-color: #2196f3;
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .formfield-checkbox-link {
@@ -826,6 +861,8 @@ body {
 .form-service_order__button-submit:hover,
 .form-service_order__button-submit:focus {
   background-color: #188ce8;
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===============================================
