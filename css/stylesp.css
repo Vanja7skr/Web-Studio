@@ -232,20 +232,46 @@ body {
   column-gap: 30px; 
   row-gap: 30px; 
 }
+.header_li {
+  color: #000;
+}
 
 /* Individual Portfolio Items */
 .spspnapov_nach {
   flex-basis: calc((100% - 60px) / 3);
   background-color: var(--white-color);
   border: 1px solid #EEEEEE;
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 
-              0 4px 4px 0 rgba(0, 0, 0, 0.06), 
-              0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  transition: box-shadow 0.3s ease;
+  height: 403px;
+  width: 370px;
+
+}
+.port_list_hov {
+  position: relative;
+  bottom: 404px;
+  padding: 64px 24px;
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  /* z-index: -10; */
+  opacity: 0;
+
+
 }
 
+.spspnapov_nach:hover .port_list_hov {
+  opacity: 1;
+
+}
 .spspnapov_nach:hover {
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+
+
 }
 
 .spspnapov_nach_img {
