@@ -1,6 +1,3 @@
-/* ===========================
-   CSS CUSTOM PROPERTIES (Variables)
-   =========================== */
 :root {
   /* Colors */
   --black-color: rgba(0, 0, 0, 1);
@@ -19,6 +16,12 @@
 /* ===========================
    GLOBAL STYLES & RESET
    =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-family);
   letter-spacing: 0.02em;
@@ -47,9 +50,6 @@ body {
    HEADER SECTION
    =========================== */
 
-/* Header Container */
-
-
 /* Header layout */
 .flex-container {
   display: flex;
@@ -66,6 +66,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .nachtex {
@@ -105,10 +106,8 @@ body {
   height: 4px;
   width: 0;
   background-color: var(--blue-color);
-    transition-property: height;
+  transition-property: height;
   transition-duration: 250ms;
-  /* transition: width 0.3s ease; */
-
   border-radius: 2px;
 }
 
@@ -126,12 +125,13 @@ body {
   display: flex;
   justify-content: space-around;
   color: var(--another-black);
+  text-decoration: none;
 }
 
 .nav_sps_nachinochka:hover, 
 .nav_sps_nachinochka:focus {
   color: var(--blue-color);
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -162,18 +162,19 @@ body {
   display: flex;
   text-align: center;
   fill: var(--blue-color);
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .spisokkont_nachinochka {
   color: var(--grey-color);
+  text-decoration: none;
 }
 
 .spisokkont_nachinochka:hover,
 .spisokkont_nachinochka:focus {
   color: var(--blue-color);
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -187,7 +188,7 @@ body {
 .spisokkont_svg:hover,
 .spisokkont_svg:focus {
   fill: var(--blue-color);
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -244,7 +245,7 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 
               0 1px 2px 0 rgba(0, 0, 0, 0.08), 
               0 3px 1px 0 rgba(0, 0, 0, 0.1);
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -255,32 +256,52 @@ body {
   margin-top: 34px;
   column-gap: 30px; 
   row-gap: 30px; 
+  list-style: none;
+  padding: 0;
 }
+
 .header_li {
   color: #000;
 }
+
 .header_li:hover,
 .header_li:active {
   color: var(--blue-color);
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Individual Portfolio Items */
 .spspnapov_nach {
-  flex-basis: calc((100% - 60px) / 3);
+  
   background-color: var(--white-color);
   border: 1px solid #EEEEEE;
   height: 403px;
   width: 370px;
-
-}
-.port_list_hov {
   position: relative;
-  bottom: 404px;
-  padding: 64px 24px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.spspnapov_nach_div {
+  flex-basis: calc((100% - 60px) / 3);
   width: 370px;
   height: 294px;
+}
+
+/* Image container with overlay */
+.spspnapov_nach_img_container {
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+}
+
+.port_list_hov {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  padding: 64px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   font-family: var(--font-family);
   font-weight: 400;
@@ -288,29 +309,27 @@ body {
   line-height: 156%;
   letter-spacing: 0.03em;
   color: #fff;
-  /* z-index: -10; */
-  opacity: 0;
-
-
+  transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 50px;
 }
 
 .spspnapov_nach:hover .port_list_hov {
-  opacity: 1;
-    transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  top: 0;
 }
+
+
 .spspnapov_nach:hover {
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
-
 .spspnapov_nach_img {
   width: 100%;
-  height: auto;
+  height: 294px;
+  object-fit: cover;
   display: block;
 }
 
@@ -368,6 +387,7 @@ footer {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .kontex {
@@ -389,6 +409,11 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.footer_adr_sps {
+  list-style: none;
+  padding: 0;
+}
+
 .footer_adr_sps_nach {
   font-weight: 400;
   font-size: 14px;
@@ -407,6 +432,7 @@ footer {
 
 .footer_adr_sps_nachinochka {
   color: var(--light-grey-color);
+  text-decoration: none;
 }
 
 /* Footer social media */
@@ -429,10 +455,12 @@ footer {
   width: 206px;
 }
 
-/* Social media icons (shared) */
+/* Social media icons */
 .te_sps {
   display: flex;
   column-gap: 12px;
+  list-style: none;
+  padding: 0;
 }
 
 .te_sps_li {
@@ -443,28 +471,26 @@ footer {
 .te_sps_li_a {
   width: 100%;
   height: 100%;
+  display: block;
+  text-decoration: none;
 }
 
 .te_sps_li_svg {
-  fill: var(--grey-color);
+  fill: white;
   width: 44px;
   height: 44px; 
   padding: 12px;
   border-width: 0px;
   border-radius: 12px;
+  background-color: rgb(67, 68, 77);
 }
 
 .te_sps_li_svg:hover,
 .te_sps_li_svg:focus {
   fill: white;
   background-color: var(--blue-color);
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.te_sps_li_svg{
-
-  fill: white;
-
 }
 
 /* Footer subscription */
@@ -492,10 +518,17 @@ footer {
   width: 358px;
   height: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: rgba(33, 150, 243, 0);
+  background: transparent;
+  color: white;
+  padding: 15px 16px;
+}
+
+.pidps-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .pidps-sub {
+  border: none;
   border-radius: 4px;
   width: 200px;
   height: 50px;
@@ -506,6 +539,7 @@ footer {
   padding-top: 6px;
   margin-left: 12px;
   align-items: center;
+  cursor: pointer;
 }
 
 .pidps-sub-span {
@@ -521,16 +555,7 @@ footer {
 }
 
 .pidps-sub-s {
-  background-image: url(../img/plane.png);
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.5 17.3923L10.4983 17.3896L8.40988 21.75L12 24L14.1599 17.3923L24 0Z" fill="white"/></svg>') no-repeat center;
   width: 24px;
   height: 24px;
 }
-
-/* ===============================================
-   UTILITY CLASSES
-   =============================================== */
-
-.coitainer {
-  flex-direction: row;
-}
-
